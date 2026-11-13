@@ -1,0 +1,23 @@
+# Fase G OMI — keluaran omi_fase_g.py (B = 2000, butir G1)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## G1. Komposisi STEMI
+
+(i) Selisih label oklusi − label infark di dalam tipe infark (prediksi tersimpan, tiga penetapan):
+
+| Lapis | n OMI / n tanpa OMI | probe-OMI | probe-AMI | selisih probe | CNN-OMI | CNN-AMI | selisih CNN |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| STEMI | 715 / 708 | 0.584 | 0.532 | 0.052 [0.036, 0.068] | 0.591 | 0.550 | 0.041 [0.023, 0.061] |
+| NSTEMI | 417 / 804 | 0.655 | 0.612 | 0.043 [0.027, 0.058] | 0.625 | 0.581 | 0.044 [0.023, 0.066] |
+
+(ii) Nol permutasi berlapis tipe infark (probe, C = 0,001, lipatan 20261107):
+
+Permutasi selesai: 100. AUROC (c) label asli 0.6431 (F1).
+Nol berlapis AUROC (c): rerata 0.6006, SB 0.0052, persentil 2,5/50/95/97,5 0.5917 / 0.6004 / 0.6092 / 0.6099, maksimum 0.6121.
+Label asli − rerata nol berlapis: 0.0425; permutasi ≥ label asli: 0 dari 100 (p = 0.010).
+Nol berlapis di dalam STEMI: rerata 0.5277 (rentang 0.5084–0.5440); di dalam NSTEMI: rerata 0.6128 (rentang 0.6007–0.6337).
+Nol tak berlapis (F1) sebagai pembanding: rerata 0.5959.
+Aturan: label asli > persentil ke-95 nol berlapis: **ya**.
+
+Waktu jalan: 2.3 menit.

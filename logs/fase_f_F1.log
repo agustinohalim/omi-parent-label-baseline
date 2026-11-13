@@ -1,0 +1,13 @@
+# Fase F OMI — keluaran omi_fase_f.py (B = 2000, butir F1)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## F1. Nol permutasi label oklusi di dalam infark (probe, C = 0,001, lipatan 20261107)
+
+Permutasi selesai: 100. AUROC (c) label asli 0.6431; OMI lawan semua 0.8878.
+Sebaran nol AUROC (c): rerata 0.5959, SB 0.0056, persentil 2,5/50/95/97,5 0.5835 / 0.5964 / 0.6048 / 0.6056, maksimum 0.6080.
+Label asli − rerata nol: 0.0472; permutasi ≥ label asli: 0 dari 100 (p = 0.010).
+Sebaran nol AUROC OMI lawan semua: rerata 0.8784, rentang 0.8719–0.8822.
+Aturan: label asli > persentil ke-95 nol: **ya**.
+
+Waktu jalan: 0.0 menit.

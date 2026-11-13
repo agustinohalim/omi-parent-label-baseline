@@ -1,0 +1,30 @@
+# Fase G OMI — keluaran omi_fase_g.py (B = 2000, butir G3)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## G3. Model berlabel infark per baris Tabel 4; probe lawan CNN (penyimpangan P1)
+
+(i) Skor OMI tiap model untuk pasangan kelompok (pos lawan neg):
+
+| Pasangan | n pos / n neg | probe-OMI | probe-AMI | selisih probe | CNN-OMI | CNN-AMI | selisih CNN | ±0,03 probe |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| OMI lawan tanpa infark | 1133 / 14976 | 0.912 | 0.919 | -0.006 [-0.010, -0.002] | 0.891 | 0.891 | -0.000 [-0.007, 0.006] | ya |
+| Infark tanpa oklusi lawan tanpa infark | 1513 / 14976 | 0.825 | 0.850 | -0.025 [-0.029, -0.021] | 0.808 | 0.825 | -0.017 [-0.025, -0.010] | ya |
+|   STEMI | 708 / 14976 | 0.911 | 0.925 | -0.014 [-0.019, -0.010] | 0.894 | 0.902 | -0.007 [-0.016, 0.001] | ya |
+|   NSTEMI | 804 / 14976 | 0.749 | 0.783 | -0.034 [-0.041, -0.028] | 0.731 | 0.758 | -0.026 [-0.038, -0.016] | tidak |
+|   dengan PCI | 765 / 14976 | 0.844 | 0.867 | -0.023 [-0.028, -0.018] | 0.830 | 0.846 | -0.017 [-0.027, -0.007] | ya |
+|   tanpa PCI | 748 / 14976 | 0.805 | 0.832 | -0.027 [-0.034, -0.021] | 0.786 | 0.804 | -0.018 [-0.029, -0.008] | tidak |
+|   NSTEMI tanpa PCI | 412 / 14976 | 0.730 | 0.765 | -0.034 [-0.044, -0.025] | 0.710 | 0.735 | -0.025 [-0.041, -0.008] | tidak |
+
+(ii) Selisih probe-OMI − CNN-OMI:
+
+| Sasaran | n pos / n | probe-OMI | CNN-OMI | selisih |
+| --- | --- | --- | --- | --- |
+| OMI lawan semua | 1133 / 17622 | 0.888 | 0.867 | 0.021 [0.014, 0.029] |
+| (c) OMI lawan AMI tanpa OMI | 1133 / 2646 | 0.643 | 0.631 | 0.012 [-0.004, 0.026] |
+| di dalam STEMI | 715 / 1423 | 0.584 | 0.591 | -0.007 [-0.031, 0.018] |
+| di dalam NSTEMI | 417 / 1221 | 0.655 | 0.625 | 0.030 [0.004, 0.054] |
+
+Aturan: CI selisih (c) memuat 0: ya → anak kalimat boleh.
+
+Waktu jalan: 31.6 menit.

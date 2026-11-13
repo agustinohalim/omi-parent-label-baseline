@@ -1,0 +1,36 @@
+# Fase F OMI — keluaran omi_fase_f.py (B = 2000, butir F2,F3)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## F2. Selisih label per kuartil jarak EKG ke angiografi
+
+| Kuartil | Sasaran | n pos / n | probe-OMI − probe-AMI | CNN-OMI − CNN-AMI |
+| --- | --- | --- | --- | --- |
+| Q1 | (c) OMI lawan AMI tanpa OMI | 533 / 1147 | 0.044 [0.030, 0.057] | 0.041 [0.021, 0.060] |
+| Q1 | OMI lawan semua | 533 / 4408 | 0.004 [-0.002, 0.010] | 0.001 [-0.010, 0.012] |
+| Q2 | (c) OMI lawan AMI tanpa OMI | 275 / 701 | 0.054 [0.036, 0.072] | 0.051 [0.026, 0.075] |
+| Q2 | OMI lawan semua | 275 / 4403 | 0.003 [-0.005, 0.011] | 0.017 [0.004, 0.030] |
+| Q3 | (c) OMI lawan AMI tanpa OMI | 185 / 439 | 0.036 [0.014, 0.059] | 0.012 [-0.021, 0.044] |
+| Q3 | OMI lawan semua | 185 / 4405 | -0.008 [-0.016, 0.000] | -0.004 [-0.022, 0.014] |
+| Q4 | (c) OMI lawan AMI tanpa OMI | 140 / 359 | 0.021 [-0.006, 0.047] | 0.049 [0.013, 0.086] |
+| Q4 | OMI lawan semua | 140 / 4406 | -0.006 [-0.015, 0.004] | 0.007 [-0.010, 0.025] |
+
+## F3. Oklusi kronis lawan oklusi akut
+
+(i) OMI lawan CTO langsung (1133 / 946): probe-OMI 0.803 [0.783, 0.821]; probe-AMI 0.816 [0.798, 0.834].
+
+(ii) Rujukan sama: tanpa AMI non-CTO (14030).
+
+| Model | OMI lawan rujukan | CTO lawan rujukan | selisih |
+| --- | --- | --- | --- |
+| probe-OMI | 0.920 [0.911, 0.928] | 0.686 [0.667, 0.705] | 0.234 [0.214, 0.254] |
+| probe-AMI | 0.925 [0.918, 0.933] | 0.695 [0.677, 0.712] | 0.231 [0.212, 0.250] |
+
+(iii) CTO lawan rujukan, menurut Prior_PCI:
+
+| Prior_PCI | n CTO / n rujukan | probe-OMI | probe-AMI |
+| --- | --- | --- | --- |
+| ya | 129 / 14030 | 0.674 [0.622, 0.723] | 0.681 [0.631, 0.730] |
+| tidak | 817 / 14030 | 0.687 [0.668, 0.708] | 0.697 [0.678, 0.716] |
+
+Waktu jalan: 26.8 menit.

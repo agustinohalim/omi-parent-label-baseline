@@ -1,0 +1,20 @@
+# Commits that created or amended the pre-registration and analysis plans, in the authors' private
+# working repository (short hash, commit time, file). The files in this folder are the final texts.
+7a6bca8 2026-11-07T00:37:31+07:00 Prareg_OMI.md
+ed9be34 2026-11-11T13:43:40+07:00 Prareg_OMI.md
+740b1e3 2026-11-11T15:04:46+07:00 Prareg_OMI.md
+11b275a 2026-11-11T15:06:20+07:00 Prareg_OMI.md
+9db904f 2026-11-11T19:36:00+07:00 Prareg_OMI.md
+b56d323 2026-11-12T15:16:52+07:00 Prareg_OMI_B.md
+49dd00e 2026-11-13T10:15:18+07:00 Prareg_OMI_C.md
+86a4542 2026-11-13T11:20:35+07:00 Prareg_OMI_D.md
+b19d4c1 2026-11-13T12:45:08+07:00 Prareg_OMI_E.md
+e9c7062 2026-11-13T13:46:50+07:00 Prareg_OMI_F.md
+901b8fe 2026-11-13T15:40:15+07:00 Prareg_OMI_G.md
+049bbcc 2026-11-13T16:08:40+07:00 Prareg_OMI_G.md
+1a15fd4 2026-11-13T16:50:24+07:00 Prareg_OMI_H.md
+3181816 2026-11-13T16:56:34+07:00 Prareg_OMI_H.md
+a33673e 2026-11-13T17:44:15+07:00 Prareg_OMI_H.md
+15d4379 2026-11-13T17:45:19+07:00 Prareg_OMI_H.md
+a7b806a 2026-11-13T21:52:00+07:00 Prareg_OMI_H.md
+6b62cb2 2026-11-13T23:01:14+07:00 Prareg_OMI_H.md

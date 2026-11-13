@@ -1,0 +1,24 @@
+# Fase F OMI — keluaran omi_fase_f.py (B = 2000, butir F4)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## F4. Ragam pelatihan
+
+(a) Selisih AUROC label oklusi − label infark per penetapan lipatan (prediksi tersimpan):
+
+| Sasaran | Model | 20261107 | 20261108 | 20261109 |
+| --- | --- | --- | --- | --- |
+| OMI lawan semua | probe | -0.002 | -0.002 | -0.001 |
+| OMI lawan semua | CNN | -0.015 | 0.015 | 0.010 |
+| (c) OMI lawan AMI tanpa OMI | probe | 0.042 | 0.039 | 0.045 |
+| (c) OMI lawan AMI tanpa OMI | CNN | 0.037 | 0.039 | 0.042 |
+| AMI lawan tanpa AMI | probe | -0.017 | -0.016 | -0.018 |
+| AMI lawan tanpa AMI | CNN | -0.028 | 0.002 | -0.004 |
+
+(b) CNN, lima benih inisialisasi, penetapan lipatan 20261107:
+
+- OMI lawan semua: AUROC label OMI per benih 0.866, 0.862, 0.871, 0.863, 0.857; label AMI 0.862, 0.877, 0.883, 0.838, 0.862; selisih per pasangan +0.004, -0.015, -0.012, +0.025, -0.005 (rerata -0.000, rentang -0.015 sampai +0.025, > 0: 2 dari 5); prediksi rerata lima benih: -0.007 [-0.013, -0.000].
+- (c) OMI lawan AMI tanpa OMI: AUROC label OMI per benih 0.640, 0.631, 0.627, 0.634, 0.618; label AMI 0.584, 0.594, 0.605, 0.586, 0.580; selisih per pasangan +0.055, +0.037, +0.022, +0.048, +0.038 (rerata +0.040, rentang +0.022 sampai +0.055, > 0: 5 dari 5); prediksi rerata lima benih: 0.048 [0.034, 0.061].
+- AMI lawan tanpa AMI: AUROC label OMI per benih 0.840, 0.838, 0.849, 0.836, 0.835; label AMI 0.857, 0.871, 0.877, 0.828, 0.858; selisih per pasangan -0.018, -0.033, -0.027, +0.008, -0.023 (rerata -0.019, rentang -0.033 sampai +0.008, > 0: 1 dari 5); prediksi rerata lima benih: -0.026 [-0.031, -0.020].
+
+Waktu jalan: 2.5 menit.

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "omi-parent-label-baseline: a parent-label baseline for ECG models trained on a nested occlusion label"
+type: software
+license: MIT
+version: 1.0.0
+date-released: 2026-11-13
+authors:
+  - given-names: Agustino
+    family-names: Halim
+    affiliation: "Information Systems and Technology, Universitas OSO, Pontianak, Indonesia"
+    orcid: "https://orcid.org/0009-0008-4388-1174"
+keywords:
+  - electrocardiogram
+  - acute coronary occlusion
+  - label nesting
+  - foundation model
+  - reporting protocol
+repository-code: "https://github.com/agustinohalim/omi-parent-label-baseline"

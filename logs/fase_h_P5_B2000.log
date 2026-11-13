@@ -1,0 +1,35 @@
+# Fase H OMI — keluaran omi_fase_h.py (B = 2000, butir H8)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## H8. Skala label klinis, titik operasi, jarak tanpa penalti (penyimpangan P5)
+
+### H8(i) Label bersarang klinis, masing-masing dinilai terhadap labelnya sendiri (lipatan 20261107, C 0,001)
+
+| Label (AMI dan …) | positif / EKG AMI | AUROC *probe* berlabel itu | AUROC *probe*-AMI | keunggulan [95 % CI] |
+| --- | --- | --- | --- | --- |
+| PCI | 1404 / 2646 | 0.534 | 0.527 | 0.008 [0.000, 0.015] |
+| VF/VT | 146 / 2646 | 0.566 | 0.530 | 0.036 [0.003, 0.069] |
+| usia >= median AMI | 1373 / 2646 | 0.602 | 0.492 | 0.111 [0.099, 0.122] |
+| laki-laki | 2065 / 2646 | 0.624 | 0.536 | 0.088 [0.079, 0.098] |
+| dekat angiografi (<= median AMI) | 1323 / 2646 | 0.563 | 0.548 | 0.014 [0.006, 0.022] |
+| STEMI | 1423 / 2646 | 0.831 | 0.768 | 0.062 [0.054, 0.071] |
+| OMI (label oklusi) | 1133 / 2646 | 0.643 | 0.601 | 0.042 [0.032, 0.052] |
+
+Urutan keunggulan: usia >= median AMI 0.111, laki-laki 0.088, STEMI 0.062, OMI (label oklusi) 0.042, VF/VT 0.036, dekat angiografi (<= median AMI) 0.014, PCI 0.008. Label oklusi di urutan 4 dari 7; label kontrol dengan keunggulan lebih besar: 3.
+
+### H8(ii) Sensitivitas pada spesifisitas tetap, (c) OMI lawan infark tanpa oklusi (tiga penetapan lipatan)
+
+| Spesifisitas | Se *probe*-OMI | Se *probe*-AMI | selisih [95 % CI] | tambahan OMI per 1.000 EKG infark [95 % CI] |
+| --- | --- | --- | --- | --- |
+| 80% | 0.329 | 0.276 | 0.053 [0.024, 0.081] | 23 [10, 35] |
+| 90% | 0.187 | 0.140 | 0.047 [0.022, 0.072] | 20 [10, 31] |
+
+Prevalensi OMI di antara EKG infark: 1133 / 2646 = 0.428.
+
+### H8(iii) Jarak tanpa penalti: regresi tahap kedua di dalam AMI
+
+AUROC (c) tahap kedua: label oklusi + spline jarak 0.645; label infark + spline jarak 0.603.
+Selisih label oklusi − label infark, dengan jarak tanpa penalti: 0.042 [0.033, 0.052]. Aturan batas bawah > 0: **ya**.
+
+Waktu jalan: 2.5 menit.

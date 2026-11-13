@@ -1,0 +1,20 @@
+# Fase H OMI — keluaran omi_fase_h.py (B = 2000, butir H5,H6)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## H5. Pasangan bersarang kedua: STEMI di dalam infark (penyimpangan P3)
+
+STEMI lawan NSTEMI di dalam AMI (1423 / 2644): *probe* berlabel STEMI 0.830, berlabel AMI 0.769; selisih 0.061 [0.053, 0.069].
+
+## H6. Titik-balik tinjauan label (penyimpangan P3)
+
+| k pasangan ditukar | % EKG infark berubah label | AUROC (c) *probe* label tertukar | AUROC (c) *probe*-AMI | keunggulan |
+| --- | --- | --- | --- | --- |
+| 0 | 0.0 | 0.553 | 0.542 | +0.011 |
+| 25 | 1.9 | 0.583 | 0.579 | +0.004 |
+| 50 | 3.8 | 0.617 | 0.614 | +0.003 |
+| 100 | 7.6 | 0.676 | 0.677 | -0.000 |
+| 200 | 15.1 | 0.771 | 0.781 | -0.010 |
+| 400 | 30.2 | 0.904 | 0.917 | -0.013 |
+
+Waktu jalan: 2.2 menit.

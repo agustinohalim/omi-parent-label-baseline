@@ -1,0 +1,16 @@
+# Fase H OMI — keluaran omi_fase_h.py (B = 2000, butir H4)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## H4. Penyimpangan P2
+
+(i) *Probe* berlabel AMI, lipatan 20261107, C 0,001: AUROC (c) 0.6010. Nol tanpa lapis: 82 % di bawahnya (p95 0.6048); nol berlapis: 53 % di bawahnya (p95 0.6092). Aturan ≤ p95 berlapis: **ya**.
+
+probe: (ii) Q4 − Q1 -0.023 [-0.053, 0.006]; (iii) selisih AUROC berlapis kuartil 0.044 [0.034, 0.054].
+CNN: (ii) Q4 − Q1 0.008 [-0.032, 0.054]; (iii) selisih AUROC berlapis kuartil 0.041 [0.028, 0.054].
+
+Aturan (ii) CI Q4 − Q1 *probe* di dalam ±0,03: **tidak**. Aturan (iii) batas bawah *probe* > 0: **ya**.
+
+(iv) (keunggulan dengan jarak) − (keunggulan tanpa jarak): -0.001 [-0.002, 0.001]. Aturan CI di dalam ±0,03: **ya**.
+
+Waktu jalan: 10.6 menit.

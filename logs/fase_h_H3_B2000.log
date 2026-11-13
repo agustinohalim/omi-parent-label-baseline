@@ -1,0 +1,24 @@
+# Fase H OMI — keluaran omi_fase_h.py (B = 2000, butir H3)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## H3. Jarak EKG ke angiografi (penyimpangan P1)
+
+(i) AUROC jarak saja (skor = −Time_Interval) untuk (c): 0.544 [0.521, 0.565].
+
+Latih empat *probe*: 0.9 menit.
+
+| *Probe* | AUROC (c) |
+| --- | --- |
+| OMI, tanpa jarak | 0.643 |
+| AMI, tanpa jarak | 0.601 |
+| OMI, dengan jarak | 0.648 |
+| AMI, dengan jarak | 0.606 |
+
+(ii) Selisih label oklusi − label infark, (c), tanpa jarak: 0.042 [0.033, 0.051].
+
+(ii) Selisih label oklusi − label infark, (c), dengan jarak: 0.041 [0.032, 0.051].
+
+Aturan: batas bawah selisih dengan jarak > 0: **ya**.
+
+Waktu jalan: 2.0 menit.

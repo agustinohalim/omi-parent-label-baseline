@@ -1,0 +1,43 @@
+# Fase D OMI — keluaran omi_fase_d.py (B = 2000, butir D3)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## D3. STAFF III: baseline cath lab lawan akhir inflasi balon
+
+Pasangan tersegmen: 98. Mutu tidak ok (nilai konstan > 1 s): 0 pasien [], dibuang.
+
+Sumber penanda deflasi: event: 98. Selisih event dari D0 + D1 terbesar: 0.0 s.
+
+| Model | sasaran latih | C | n latih |
+| --- | --- | --- | --- |
+| probe-OMI | OMI | 0.001 | 17622 |
+| probe-AMI | AMI | 0.001 | 17622 |
+
+| Model | skala | median baseline | median akhir inflasi | rerata perubahan | bagian naik | AUROC akhir inflasi lawan baseline | Wilcoxon p |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| probe-OMI | logit | -3.381 | -1.860 | 1.500 [1.198, 1.815] | 0.867 [0.796, 0.929] | 0.762 [0.713, 0.811] | 1.9e-13 |
+| probe-OMI | peluang | 0.033 | 0.135 | 0.139 [0.102, 0.178] | 0.867 [0.796, 0.929] | 0.762 [0.713, 0.811] | 6.5e-12 |
+| probe-AMI | logit | -2.087 | -0.486 | 1.665 [1.346, 2.004] | 0.847 [0.776, 0.918] | 0.767 [0.717, 0.817] | 4.7e-14 |
+| probe-AMI | peluang | 0.110 | 0.381 | 0.236 [0.183, 0.288] | 0.847 [0.776, 0.918] | 0.767 [0.717, 0.817] | 1.4e-12 |
+
+Selisih rerata perubahan logit probe-OMI − probe-AMI (berpasangan, deskriptif): -0.166 [-0.290, -0.043].
+
+Deskriptif per arteri dan infark lama (logit, rerata perubahan; bagian naik):
+
+| Lapis | n | probe-OMI | probe-AMI |
+| --- | --- | --- | --- |
+| arteri LAD | 32 | 1.643; 0.94 | 1.823; 0.88 |
+| arteri RCA | 44 | 1.709; 0.89 | 1.830; 0.86 |
+| arteri sirkumfleks | 20 | 1.068; 0.80 | 1.286; 0.85 |
+| arteri lainnya | 2 | -1.082; 0.00 | -0.693; 0.00 |
+| tanpa infark lama | 65 | 1.679; 0.91 | 1.800; 0.91 |
+| dengan infark lama | 33 | 1.146; 0.79 | 1.399; 0.73 |
+
+Letak skor STAFF III terhadap Chongqing (skor model akhir pada EKG latihnya sendiri, persentil di kelompok tanpa AMI; median kelompok Chongqing sebagai rujukan):
+
+| Model | median STAFF baseline | median STAFF akhir inflasi | median CQ tanpa AMI | median CQ AMI tanpa OMI | median CQ OMI | persentil baseline | persentil akhir inflasi |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| probe-OMI | -3.381 | -1.860 | -4.159 | -2.127 | -1.087 | 70.5 | 94.0 |
+| probe-AMI | -2.087 | -0.486 | -3.028 | -0.458 | 0.077 | 74.9 | 95.4 |
+
+Waktu jalan: 3.3 menit.

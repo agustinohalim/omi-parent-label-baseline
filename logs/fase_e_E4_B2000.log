@@ -1,0 +1,13 @@
+# Fase E OMI — keluaran omi_fase_e.py (B = 2000, butir E4)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## E4. CNN berlabel AMI lawan CNN berlabel OMI
+
+| Sasaran | n pos / n | CNN-OMI | CNN-AMI | selisih CNN-OMI − CNN-AMI |
+| --- | --- | --- | --- | --- |
+| OMI lawan semua | 1133 / 17622 | 0.867 [0.857, 0.877] | 0.863 [0.854, 0.872] | 0.003 [-0.003, 0.010] |
+| (c) OMI lawan AMI tanpa OMI | 1133 / 2646 | 0.631 [0.612, 0.650] | 0.591 [0.572, 0.610] | 0.040 [0.027, 0.052] |
+| AMI lawan tanpa AMI | 2646 / 17622 | 0.843 [0.836, 0.851] | 0.853 [0.846, 0.860] | -0.010 [-0.015, -0.005] |
+
+Waktu jalan: 10.7 menit.

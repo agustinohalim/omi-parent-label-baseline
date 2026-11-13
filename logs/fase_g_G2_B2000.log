@@ -1,0 +1,18 @@
+# Fase G OMI — keluaran omi_fase_g.py (B = 2000, butir G2)
+
+Analisis utama: 17622 EKG, OMI 1133, AMI 2646.
+
+## G2. Uji "differ only"
+
+| Sasaran | n pos / n | selisih probe | selisih CNN |
+| --- | --- | --- | --- |
+| OMI lawan semua | 1133 / 17622 | -0.002 [-0.005, 0.002] | 0.003 [-0.003, 0.010] |
+| OMI lawan tanpa infark | 1133 / 16109 | -0.006 [-0.010, -0.003] | -0.000 [-0.006, 0.006] |
+| (c) OMI lawan AMI tanpa OMI | 1133 / 2646 | 0.042 [0.033, 0.052] | 0.040 [0.027, 0.052] |
+| AMI lawan tanpa AMI | 2646 / 17622 | -0.017 [-0.020, -0.014] | -0.010 [-0.015, -0.005] |
+
+Aturan "only" (probe): OMI lawan tanpa infark di dalam ±0,03 dan memuat 0: tidak; infark lawan tanpa infark: tidak → **only tidak dipakai**.
+
+Aturan "only" (CNN): OMI lawan tanpa infark di dalam ±0,03 dan memuat 0: ya; infark lawan tanpa infark: tidak → **only tidak dipakai**.
+
+Waktu jalan: 15.4 menit.
