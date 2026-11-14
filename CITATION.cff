@@ -4,7 +4,7 @@ title: "omi-parent-label-baseline: a parent-label baseline for ECG models traine
 type: software
 license: MIT
 version: 1.0.0
-date-released: 2026-11-13
+date-released: 2026-11-14
 authors:
   - given-names: Agustino
     family-names: Halim
@@ -17,3 +17,4 @@ keywords:
   - foundation model
   - reporting protocol
 repository-code: "https://github.com/agustinohalim/omi-parent-label-baseline"
+doi: 10.5281/zenodo.24223296

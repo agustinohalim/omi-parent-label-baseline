@@ -1,5 +1,7 @@
 # omi-parent-label-baseline
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24223296.svg)](https://doi.org/10.5281/zenodo.24223296)
+
 Analysis code, aggregate logs, analysis plans and fold assignments for the manuscript *A parent-label baseline for
 ECG models trained on nested labels: what a reviewed occlusion label adds within infarction* (in preparation).
 

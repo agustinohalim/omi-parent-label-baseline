@@ -64,4 +64,17 @@ Berkas: kirim_server_m3a.csv (biner, untuk diunggah) dan kirim_server_m3a_prob.c
 
 Prediksi positif 13,2 % sesuai yang diharapkan dari spesifisitas 90 % dan sensitivitas 0,66 pada prevalensi
 latih 6,4 % (perkiraan kasar, prevalensi test tak diketahui). Berkas di `$OMI_DATA/` (di luar repo).
-Unggah ke server penilai: belum ⬜ (dilakukan pengguna, sekali; hasilnya dicatat di sini apa adanya).
+Unggah ke server penilai: dilakukan pengguna sekali, 14 November 2026, berkas `kirim_server_m3a_unggah.csv`
+(= `kirim_server_m3a.csv` tanpa kolom Patient_id, yang tidak diterima server; 1.995 baris urutan test.csv, 264 positif).
+Keluaran server, apa adanya (tangkapan layar 22:26 di `$OMI_DATA/server_hasil_m3a_2026-11-14.png`):
+
+```
+Evaluation Results
+Label    Samples    Sensitivity    Specificity    PPV    NPV    Accuracy    F1-score
+OMI    1995    0.7031    0.9068    0.3409    0.9780    0.8937    0.4592
+```
+
+Turunan (aritmetika dari keluaran di atas dan 264 positif yang dikirim): TP 90, FP 174, FN 38, TN 1.693; OMI di test
+128 / 1.995 (6,4 %, sama dengan prevalensi latih). Garis dasar penulis data (CNN denyut median,
+`Kebaruan_OMI_2026-11-06.md`): Se 0,697, Sp 0,873, PPV 0,277, F1 0,396 — ambang dan model berbeda, bukan uji
+berpasangan; probe pada Se setara dengan Sp lebih tinggi 0,034.
